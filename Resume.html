@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <title>Resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="shortcut icon" type="image/jpg" href="img6.jpg" />
+  <style>
+    .mycls {
+      width: 20vh;
+      border: 20px;
+      border-color: rgb(243, 243, 247);
+
+    }
+
+    .col1 {
+      color: white;
+      background-color: rgb(70, 95, 158);
+
+    }
+
+    .bio {
+
+      padding: 30px;
+      width: 88%;
+      margin-left: 40px;
+      color: rgb(15, 14, 14);
+
+    }
+
+    .a1 {
+      margin: 40px;
+      background-color: blue;
+      color: white;
+      width: 90% !important;
+      background-image: url("image4.jpg");
+      padding: 10x;
+    }
+
+    .a2,
+    h6 {
+      margin: 40px;
+    }
+
+    .center {
+      display: block;
+      width: 100px;
+      margin-left: 120px;
+      margin-top: 20px;
+    }
+
+    .skill {
+      background-color: rgb(116, 194, 92);
+      color: white;
+      padding: -10%;
+      text-align: right;
+      font-size: 20px;
+      border-radius: 15px;
+    }
+
+    .php {
+      width: 60%;
+      margin-left: 30px;
+    }
+
+    .a1-title {
+      margin-left: 30px;
+      margin-top: 10px;
+      padding: -20px;
+
+    }
+
+    .width-50 {
+      width: 50%;
+    }
+
+    .width-80 {
+      width: 80%;
+    }
+
+    .bg-project {
+
+      text-decoration: none;
+      padding: 9px;
+      font-family: Arial, Helvetica, sans-serif;
+      color: black;
+    }
+
+    .cursive {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .title-right {
+      text-align: right;
+    }
+
+    .image-title {
+      transition: 1s;
+
+    }
+
+    .image-title:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 0px 15px black;
+    }
+
+    .accord-info {
+      margin-top: -50px;
+    }
+
+    .fa {
+      font-size: 30px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      margin-bottom: 20px;
+    }
+
+    /* Add a hover effect if you want */
+    .fa:hover {
+      opacity: 0.7;
+      transition: 1s;
+      transform: scale(1.3);
+      box-shadow: 0px 0px 15px rgb(45, 92, 100);
+    }
+
+    /* Set a specific color for each brand */
+
+    /* Facebook */
+    .fa-facebook {
+      background: #f6f6f7;
+      color: rgb(41, 161, 216);
+
+    }
+
+    /* Twitter */
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+      margin-left: 10px;
+    }
+
+    /* instagarm */
+    .fa-instagram {
+      background: #f7f8f8;
+      color: rgb(99, 5, 36);
+      margin-left: 10px;
+    }
+    .fb1 {
+      background: #0404f8;
+      color: rgb(245, 247, 248);
+
+    }
+
+    /* Twitter */
+    .tt1 {
+      background: #55ACEE;
+      color: white;
+      margin-left: 10px;
+    }
+
+    /* instagarm */
+    .ig1-instagram {
+      background: #3307d3;
+      color: rgb(99, 5, 36);
+      margin-left: 10px;
+    }
+
+    .a2 {
+      color: rgb(12, 12, 12);
+    }
+
+    h6 {
+      color: black;
+    }
+
+    .card {
+      margin-top: 40px;
+      margin-left: 30px;
+      margin-bottom: 30px;
+      ;
+      width: 400px;
+      
+    }
+
+    .card-title {
+      color: blueviolet;
+    }
+
+    .card-text {
+      color: black;
+    }
+    .card2 {
+      margin-top: 100px;
+      margin-left :130px;
+      margin-bottom: 30px;
+      ;
+      width: 400px;
+    }
+
+    .card-title {
+      color: blueviolet;
+    }
+
+    .card-text {
+      color: black;
+    }
+    .card-img-top:hover
+    {
+     
+      transition: 1s;
+      transform: scale(0.99);
+      box-shadow: 0px 0px 15px rgb(45, 92, 100);
+    }
+    
+    
+    .portfolio-btn
+    {
+      border-radius: 4px;
+  background-color: #f4741e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding:5px;
+  width: 200px;
+  transition: all 0.5s;
+
+    }
+    .portfolio-btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.portfolio-btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.portfolio-btn:hover span {
+  padding-right: 25px;
+}
+
+.portfolio-btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.a1-prog,.a1-title
+{
+  margin-left: 70px;
+}
+
+   
+    
+  </style>
+</head>
+
+<body>
+
+  <section class="banner">
+    <div class="container">
+      <div class="row myrow">
+        <div class="col-4 col1 top-col1">
+          <H1 class="cursive"> Mushtaq Ahmad Mir </h1>
+          <a href="https://www.facebook.com" target="blank" class="fa fa-facebook"></a>
+          <a href="https://www.twitter.com" target="blank" class="fa fa-twitter"></a>
+          <a href="https://www.instagram.com" target="blank" class="fa fa-instagram"></a>
+        </div>
+        <div class="col-4 col1">
+          <img src="img6.jpg" class="rounded-circle center image-title">
+
+        </div>
+
+        <div class="col-4 col1">
+          <h3 class="float-end cursive title-right">Developer at Code Brew Labs <br> Chandigarh</h3>
+          <i class="material-icons float-end" style="font-size:48px;color:rgb(0, 153, 255) ">add_location</i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="card" style="width: 30rem;">
+            <img src="myimg2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mushtaq Ahmad Mir </h5>
+              <p class="card-text">Developer at <b> Code Brew Labs </b> Chandigarh</p>
+              <a href="https://mushtaqahmadmir.github.io/Portfolio " target="_blank" class="btn btn-primary portfolio-btn"><span>
+                Portfolio</span>></a>
+            </div>
+          </div>
+          <h1 class="a1 accordion">Profile</h1>
+          <p class="bio">Hi My Name is Mushtaq Ahmad., I’m from Srinagar Jammu and Kashmir. I have done my bachelors in
+            computer application in Punjabi university .Currently I’m pursuing MCA final in Lovely professional
+            university with current cgpa 8.9. So far my family background in concerned we are four members, my dad and I
+            have two siblings. I’m interested to work as Web developor, and my goal is to get good opportunity on the
+            same profile in reputed company.</p>
+          <h1 class="a1">Skills</h1>
+          <p class="a1-title">PHP</p>
+          <div class="skill php a1-prog width-60">60%</div>
+          <p class="a1-title">HTML 5</p>
+          <div class="skill php a1-prog width-80">80%</div>
+          <p class="a1-title">CSS</p>
+          <div class="skill php a1-prog width-50">50%</div>
+
+          <h1 class="a1">Languages</h1>
+          <p class="a1-title">English</p>
+          <div class="skill php a1-prog width-60">60%</div>
+          <p class="a1-title">Kashmiri</p>
+          <div class="skill php a1-prog width-80">80%</div>
+          <p class="a1-title">Urdu</p>
+          <div class="skill php a1-prog width-50">50%</div>
+        </div>
+        <div class="col-6">
+          <h1 class="a1">Education</h1>
+          <h3 class="a2">Matriculation</h3>
+          <h6><b>2013</b> 73.4% JKBOSE</h6>
+          <h3 class="a2">Senior Secondary</h3>
+          <h6><b>2015</b> 77.6% JKBOSE</h6>
+          <h3 class="a2">Graduation</h3>
+          <h6><b>2019</b> 67.6% Punjabi University</h6>
+          <h3 class="a2">Masters</h3>
+          <h6><b>2021</b> 90% LPU</h6>
+          <div class="myaccord">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header show" id="headingOne">
+                  <button class="accordion-button a1" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Projects
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="accord-info">
+                      <strong style="color: cadetblue;">
+                        <h6><b>2018</b> Side Face Detection LPU</h6>
+                        <h6 class="bg-project">The problem with earlier Detection systems was that full face was used to
+                          detect the person it was impossible to dectect the person with side face .So this projects
+                          main motive is to detect from side also </h3>
+                          <h6><b>2019</b> Student Attendance System LPU</h6>
+                          <h6 class="bg-project"> The main motive of this project was to take the online attendance and
+                            manage the students and teachers . The admin was able to manage the students as well as
+                            teachers .the Teachers were able to manage only the students .The monthly reports were taken
+                            from the project </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed a1" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Hobbies
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+
+                      <div class="accord-info">
+                        <h6 class="bg-project">I have couple of hobbies like watching movies, playing cricket and volley
+                          ball, browsing internet , searching for helpful applications. </h3>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed a1" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Achievements
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <h6 class="bg-project">Won Volleyball tournamnet at , Sholipora Budgam
+                        * October 2015
+                        All-Rounder player in Cricket.
+                        * August 2018 – Present
+                        An Active member of NGO at Takmeeli-e-Zahoor, Labertal</h6>
+                    </div>
+                  </div>
+                  <div class="card2" style="width: 30rem;">
+                    <img src="image8.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Social Profiles </h5>
+                      <p style="text-decoration: none ; color: dimgrey;" class="card-text ">Welcome Back ! Have a look aat my social profiles. 
+                        Social profiles are a description of individuals' social characteristics that identify them on social media sites such as LinkedIn and Facebook, when using tools such as digg and Delicious as well as collaboration applications such as Jive, IBM Connections or Socialtext.
+                      </p>
+                      <a href="https://www.facebook.com" target="blank" class="fa fa-facebook fb1"></a>
+          <a href="https://www.twitter.com" target="blank" class="fa fa-twitter tt1"></a>
+          <a href="https://www.instagram.com" target="blank" class="fa fa-instagram ig1"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col1">
+          <h3>Contact</h3>
+          <ul>
+
+            <li><i class="icofont-rounded-right"></i> <strong>Website:</strong>www.techware.ga</li>
+            <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +917006736101</li>
+            <li><i class="icofont-rounded-right"></i> <strong>Mail:</strong> mushtaq.codebrew@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col-6 col1">
+
+          <h3 style="margin-left: 330px;">Personal info</h3>
+          <ul class="float-end">
+            <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong>18 Nov 1998</li>
+            <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Budgam, Jammu And Kashmir</li>
+            <li><i class="icofont-rounded-right"></i> <strong>Pin:</strong> 191111</li>
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+
+
+
+
+
+</body>
+
+</html>
